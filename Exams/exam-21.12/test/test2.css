@@ -1,0 +1,240 @@
+/* Fonts */
+:root{
+  --font-head: 'Montserrat', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --purple1:#5d4f7d;
+  --purple2:#3d3b8f;
+  --bg:#f4f6fb;
+  --text:#2b2d33;
+}
+
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:white;
+  color:var(--text);
+  font-family:var(--font-body);
+}
+
+
+
+/* Header */
+.site-header{
+  background:#fff;
+  border-bottom:1px solid #e6e6ef;
+}
+.header-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:72px;
+}
+.logo{ height:34px; }
+
+.main-nav a{
+  text-decoration:none;
+  color:#696c79;
+  margin-left:28px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.main-nav a:hover{ color:#2b2d33; }
+
+/* Hero */
+.hero{
+  background:linear-gradient(180deg, #3b3a83 0%, #5c5586 100%);
+  padding:36px 0 60px;
+  color:#fff;
+}
+.hero h1{
+  font-family:var(--font-head);
+  font-size:44px;
+  letter-spacing:.02em;
+  text-align:center;
+  margin:10px 0 26px;
+}
+.cards{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+}
+
+/* Card */
+.card{
+  background:#fff;
+  color:#2b2d33;
+  border-radius:10px;
+  width: 33%;
+  min-height: 380px;
+  padding:28px 24px 0;
+  box-shadow:0 8px 26px rgba(0,0,0,.15);
+  position:relative;
+}
+.card h3{
+  margin:0 0 8px;
+  font-family:var(--font-head);
+  font-size:22px;
+}
+.card .muted{
+  color:#6d7285;
+  line-height:1.45;
+  font-size:14px;
+}
+.btn{
+  display:inline-block;
+  margin:18px 0 18px;
+  background:#6c52ff;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  padding:12px 18px;
+  border-radius:6px;
+  font-family:var(--font-head);
+}
+
+/* Price bars */
+.price-bar{
+  position:absolute;
+  left:0; right:0;
+  bottom:0;
+  border-radius:0 0 10px 10px;
+  padding:16px 24px;
+  color:#fff;
+}
+.price-bar.free{
+  background:linear-gradient(90deg,#2cd380,#12b968);
+}
+.price-bar .price-main{
+  font-size:28px;
+  font-weight:800;
+  font-family:var(--font-head);
+}
+.price-bar .note{
+  font-size:12px;
+  opacity:.95;
+  margin-top:2px;
+}
+
+.price-split{
+  position:absolute;
+  left:0; right:0;
+  bottom:0;
+  display:flex;
+}
+.price-split.narrow .price-block{ width:50%; }
+.price-block{
+  width:50%;
+  padding:18px 0;
+  text-align:center;
+  color:#fff;
+}
+.card-fund .price-block:first-child{
+  background:#5b6bb6;
+  border-radius:0 0 0 10px;
+}
+.card-fund .price-block:last-child{
+  background:#4650a3;
+  border-radius:0 0 10px 0;
+}
+.card-pro .price-block:first-child{
+  background:#8a59c4;
+  border-radius:0 0 0 10px;
+}
+.card-pro .price-block:last-child{
+  background:#6a5bd1;
+  border-radius:0 0 10px 0;
+}
+.price{ font-family:var(--font-head); font-weight:800; font-size:26px; }
+.caption{ font-size:12px; opacity:.95; }
+
+/* Presence section */
+.presence{
+  padding:44px 0 24px;
+  background:#fff;
+}
+.presence h2{
+  font-family:var(--font-head);
+  margin:0 0 12px;
+  font-size:28px;
+}
+.presence .lead{
+  color:#565b6d;
+  line-height:1.6;
+  margin-bottom:18px;
+}
+.legend{
+  display:grid;
+  grid-template-columns: 1fr 140px 140px;
+  gap:0;
+  margin:10px 0 6px;
+  color:#7b7f8f;
+  font-weight:700;
+}
+.legend .center{ text-align:center; }
+
+.feature{
+  display:grid;
+  grid-template-columns: 1fr 140px 140px;
+  align-items:center;
+  background:#f0f1f6;
+  
+  border-radius:4px;
+  padding:14px 18px;
+;
+}
+.f-text{ font-size:14px; color:#2b2d33; }
+.f-ico{ display:flex; justify-content:center; }
+.f-ico img{ width:24px; height:24px; }
+
+/* Bank section */
+.bank{
+  margin-top: 2rem;
+  position: relative;
+  width: 200%;
+  left: -50%;
+ 
+  
+  background:#fff;
+
+}
+.bank-flex{
+  display:flex;
+  gap: 3rem;
+
+}
+.bank h3{
+  font-family:var(--font-head);
+  margin:0 0 10px;
+}
+.bank p{
+  width:90%;
+  font-size:1rem;
+  color:#555b6b;
+ 
+}
+.bank-logo img{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width:300px;
+  height: 100px;
+  
+}
+
+/* Footer */
+.site-footer{
+  padding:22px 0;
+  text-align:center;
+  color:#a6a9b4;
+  background:#54546D;
+  border-top:1px solid #e6e8f3;
+  font-size:14px;
+}
+
+
+.presence.feature.grey { background-color:#E6E6E6 ;}
+
+.presence.feature.light {
+  background-color: #F8F8F8;
+}

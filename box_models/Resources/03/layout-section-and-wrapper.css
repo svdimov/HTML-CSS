@@ -1,0 +1,25 @@
+.box{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    
+}
+
+.box1{
+    border: 2px solid black;
+    width: 90%;
+    height: 150px;
+    margin: 25px 25px 25px 60px ;
+}
+
+.box2{
+    border: 3px solid blue;
+    width: 80%;
+    height: 75px;
+    margin: 34px 140px;
+}
+p{
+padding-left: 15px;
+padding-top: 10px;
+font-weight: 600;
+}

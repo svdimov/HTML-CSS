@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html {
+    font-family: "Inter", sans-serif;
+    background-color: lightgray;
+
+}
+
+
+
+
+img {
+    display: block;
+    width: 50%;
+}
+
+.sec {
+    width: 1440px;
+    height: 560px;
+    border: 1px solid lightgray;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 4rem 2rem 2rem;
+    background-color: lightgray;
+
+    border-radius: 6px;
+
+}
+
+.sec .card {
+    width: 450px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid lightgrey;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.sec .card .img {
+    width: 450px;
+    height: 35vh;
+     
+}
+
+
+.sec .card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 420px;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+
+.sec .card .content .text {
+    font-size: small;
+}
+
+.sec .card .content .title {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+
+.sec .card .content span {
+    color: grey;
+    font-weight: 800;
+}
+
+.sec .card .avatar .name {
+    font-size: medium;
+    color: gray;
+    font-weight: 300;
+    padding-left: 0.5rem;
+    padding-top: 0.75rem;
+
+}
+
+
+.sec .card .avatar .read {
+    color: gray;
+    padding-left: 13rem;
+    padding-top: 0.75rem;
+    font-weight: 200;
+}
+
+.sec .card .avatar {
+    display: flex;
+    width: 420px;
+    height: 60px;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid black;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.sec .card .avatar .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

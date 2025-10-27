@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+    border: 3px solid green;
+    /* padding: 50px 200px; */
+    height: 600px;
+    margin: 50px;
+    position: relative;
+}
+
+.secondContainer {
+    width: 40%;
+    height: 50%;
+    border: 3px solid blue;
+    padding: 20px 100px;
+    top: 25%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    position: relative;
+    margin: 0 auto;
+    /* margin-left: auto; */
+}
+
+.mainContainer p {
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    /* width: 100%; */
+    left: 30px;
+    right: 30px;
+}
+
+.mainContainer p:nth-child(1) {
+    top: 30px;
+}
+
+.mainContainer p:nth-child(2) {
+    background-color: aqua;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainContainer p:nth-child(3) {
+    bottom: 30px;
+}
+
+.secondContainer:hover {
+    background-color: salmon;
+}
+
+
+.secondTask {
+    list-style: none;
+}
+
+.secondTask .container {
+    border: 3px solid black;
+    margin-bottom: 30px;
+    height: 100px;
+    position: relative;
+}
+
+.secondTask .container p {
+    border: 3px solid blue;
+    padding: 10px;
+    position: absolute;
+    inset: 15px;
+}

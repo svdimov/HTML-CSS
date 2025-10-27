@@ -1,0 +1,155 @@
+/* ===== Base / tokens ===== */
+:root{
+  --bg: #efefef;
+  --panel-border: #d5d5d5;
+  --line: #cfcfcf;
+  --card-bg: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+
+  --accent-orange: #ffab19;
+  --accent-green: #15c33e;
+
+  --radius-lg: 14px;
+  --radius-md: 12px;
+
+  --shadow-sm: 0 6px 16px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 24px rgba(0,0,0,.12);
+
+  /* layout numbers */
+  --line-x: 88px;           /* horizontal position of the vertical timeline */
+  --gap-y: 28px;            /* vertical gap between items */
+  --card-offset: 28px;      /* space from line/dot to card edge */
+}
+
+/* ===== Page ===== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* ===== Outer panel ===== */
+.board{
+  max-width: 520px;
+  margin: 28px auto;
+  padding: 24px 16px 28px;
+  border: 2px solid var(--panel-border);
+  border-radius: var(--radius-lg);
+  position: relative;
+  background: transparent;
+}
+
+/* ===== Title card ===== */
+.title-card{
+  display: grid;
+  place-items: center;
+  margin: 12px auto 24px;
+}
+.title-card h1{
+  margin: 0;
+  text-align: center;
+  background: var(--card-bg);
+  padding: 22px 28px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+/* ===== Timeline ===== */
+.timeline{
+  position: relative;
+  /* keep some breathing room below the title card */
+  padding-top: 6px;
+}
+
+/* vertical line */
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: var(--line-x);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--line);
+}
+
+/* list reset */
+.timeline-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* one entry */
+.item{
+  position: relative;
+  display: block;
+  padding-left: calc(var(--line-x) + var(--card-offset));
+  margin-bottom: var(--gap-y);
+}
+
+/* the dot */
+.marker{
+  position: absolute;
+  left: calc(var(--line-x) - 9px); /* centers a 18px dot on the 2px line */
+  top: 22px;                       /* aligns visually with card heading */
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffb400; /* fallback */
+  box-shadow: 0 0 0 4px #fff;      /* white halo around the dot */
+}
+.marker--orange{ background: var(--accent-orange); }
+.marker--green{  background: var(--accent-green);  }
+
+/* the card */
+.card{
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 18px 16px;
+}
+
+/* short connector from line to card */
+.card::before{
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--card-offset));
+  top: 30px;                 /* roughly line up with the h2 baseline */
+  width: calc(var(--card-offset) - 8px);
+  height: 2px;
+  background: var(--line);
+}
+
+/* headings and text inside cards */
+.card h2{
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+.card p{
+  margin: 0;
+  color: var(--ink);
+}
+.card p + p{ margin-top: .75rem; }
+.card time{ font-weight: 700; }
+
+/* ===== Responsive polish ===== */
+@media (min-width: 600px){
+  .board{ max-width: 640px; padding-inline: 24px; }
+  :root{
+    --line-x: 112px;
+    --card-offset: 32px;
+  }
+  .title-card h1{ font-size: 1.5rem; }
+}
+
+@media (min-width: 900px){
+  .board{ max-width: 760px; }
+  :root{ --line-x: 128px; }
+}

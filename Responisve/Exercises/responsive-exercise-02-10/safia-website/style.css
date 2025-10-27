@@ -1,0 +1,127 @@
+:root {
+    --clr-gray-500: #7E8BB6;
+    --clr-gray-700: #162044;
+    --clr-gray-900: #070E27;
+    --clr-white: #ffffff;
+    --page-py: 1rem;
+    --page-px: 1.5rem;
+    --page-py-xl: calc(var(--page-py) * 2);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+html {
+    background-color: var(--clr-gray-900);
+    color: var(--clr-white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--clr-gray-700);
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none;
+    color: var(--clr-white);
+}
+
+.header {
+    padding: var(--page-py) var(--page-px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    height: 2rem;
+    width: auto;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    :root {
+        --page-py: 2rem;
+        --page-px: 5rem;
+    }
+}
+
+.hero {
+    padding: var(--page-py-xl) var(--page-px);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero .img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero .title {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .text {
+    color: var(--clr-gray-500);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:768px) {
+
+    .hero {
+        gap: 4.5rem;
+    }
+
+    .hero .content {
+        display: flex;
+        align-items: center;
+        max-width: 84%;
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .hero .content>* {
+        width: 45%;
+        flex-grow: 1;
+    }
+
+    .hero .img {
+        order: 1;
+        max-width: unset;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    .hero .content > *{
+        flex-grow: 0;
+    }
+}

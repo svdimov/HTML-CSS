@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+img {
+
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 100;
+
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ключово */
+
+    /* по желание */
+    margin: 0 auto;
+
+
+}
+
+nav .logo {
+    width: 50px;
+
+
+
+}
+
+
+.nav .list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: medium;
+    padding-right: 1rem;
+
+    align-items: end;
+
+
+}
+
+
+
+.nav .list li a {
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+
+}
+
+.hero .bgImg {
+    /* pos */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero .filter {
+    position: absolute;
+    inset: 0px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.hero .title {
+    position: absolute;
+    font-size: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cormorant Infant", serif;
+    color: white;
+    width: max-content;
+}
+
+
+.hero .text {
+   position: absolute;
+    font-size: 18px;
+    width: 35%;
+    color: white;
+    text-align: center;
+    bottom: 10%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

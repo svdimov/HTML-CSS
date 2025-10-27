@@ -1,0 +1,106 @@
+html{
+   
+    background-color: lightgrey;
+    margin-top: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    min-width: 400px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 0 auto;
+    border-radius: 8px;
+    
+}
+
+.main .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem;
+    
+   
+   
+    
+}
+.main .box .fifth{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+
+div {
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 300px;
+    height: 70px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    
+
+}
+
+@media (min-width:600px) {
+    
+  .main{
+    width: 560px;
+  }
+
+  div {
+     width: 480px;
+  }
+}
+
+@media (min-width:800px) {
+
+    .main{
+    width: 760px;
+    height: 550px;
+  }
+    div {
+     width: 680px;
+     height: 60px;
+  }
+}
+
+@media (min-width:1200px) {
+    .main{
+        width: 1200px;
+        height: 400px;
+
+    
+
+    }
+
+    .main .box {
+        gap: 1rem;
+    }
+       div {
+     width: 1100px;
+     height: 60px;
+  }
+  .main .box .fifth{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 1130px;
+    
+  }
+
+
+   .main .box .fifth .sidebar {
+    width: 30%;
+
+   }
+
+
+
+}

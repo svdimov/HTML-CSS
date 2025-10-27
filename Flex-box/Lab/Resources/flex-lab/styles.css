@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    /* align-items: center; */
+    padding: 6px 30px;
+    background-color: lightblue;
+    justify-content: center;
+    /* gap: 30px; */
+    
+}
+
+.header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 900px;
+    /* margin: 0 auto; */
+    /* flex-grow: 1; */
+    width: 100%;
+
+}
+
+.logo{
+    width: 50px;
+    flex-shrink: 0;
+}  
+
+header .navigation{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.goldenLayout {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.sidebar{
+    background-color:lightcoral ;
+    padding: 10px;
+    flex: 0 0 150px;
+    
+}
+
+
+.sidebar .titel {
+    font-size: 1rem;
+
+}
+
+.sidebar .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.herosection {
+    background-color: lawngreen;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.herosection .wrapper {
+    max-width: 500px;
+    text-align: center;
+    
+    
+}
+
+.btnGrpoup {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px 30px;
+    background-color: lightgray;
+
+    display: flex;
+    align-items: center;;
+    gap: 10px;
+    
+}
+
+.btnGrpoup .save{
+    margin-left: auto;
+}
+
+.imgGrid{
+    max-width: 900px;
+    margin: 30px auto;
+     background-color: lightgray;
+
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 12px;
+
+
+}
+
+html{
+    background-color:black;
+}
+
+.imgGrid .image {
+    width: calc((100% - 36px)/4);
+}

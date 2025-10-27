@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer{
+    border: 3px solid green;
+    height: 600px;
+    margin: 50px;
+    position: relative;
+}
+
+.secondContainer{
+    width: 40%;
+    height: 50%;
+    border: 3px solid blue;
+    padding: 20px 100px;
+    position: relative;
+    margin: auto;
+}
+
+.mainContainer p{
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+}

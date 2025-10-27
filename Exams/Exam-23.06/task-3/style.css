@@ -1,0 +1,376 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+      
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+
+.head {
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+    background-color: #000000;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .logo {
+
+    width: 50px;
+    height: 35px;
+
+    margin-left: 1rem;
+
+
+}
+
+.head .header ul {
+
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+
+.head .header ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.box .green {
+    background-color: #1DB954;
+    height: 300px;
+}
+
+.box .title {
+    color: white;
+    align-items: center;
+    position: absolute;
+    left: 48%;
+    top: 10%;
+
+}
+
+
+.box .white {
+    position: relative;
+    height: 300px;
+    background-color: white;
+
+}
+
+.box .img {
+    position: absolute;
+    z-index: 5;
+    width: 47%;
+    top: 0;
+    padding-top: 5rem;
+}
+
+.cards {
+
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* individual */
+.cards .individual {
+    z-index: 200;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+
+    width: 420px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.cards .individual .title {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+     color: #54546D;
+}
+
+.cards .individual ul {
+    text-align: left;
+    padding-left: 3rem;
+    font-size: medium;
+    width: 90%;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #54546D;
+
+
+
+}
+
+
+.cards .individual .btn {
+    width: 50%;
+    margin: 0 auto;
+    height: 2rem;
+    border-radius: 30px;
+    color: white;
+    background-color: #1DB954;
+    font-size: small;
+    font-weight: 900;
+
+
+
+
+}
+
+.cards .individual .smallHead {
+    position: absolute;
+    background-color: #000000;
+    color: white;
+    height: 3rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards .individual .smallHead .bigP {
+    position: absolute;
+    border-right: 1px solid white;
+    font-size: 1.25rem;
+    padding-right: 1rcap;
+    top: 20%;
+    left: 5%;
+
+
+
+}
+
+.cards .individual .smallHead .smallP {
+
+    font-size: 1.25rem;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+
+}
+
+/* famaly */
+
+
+.cards .Family {
+    z-index: 200;
+    position: absolute;
+    top: 18%;
+    left: 56%;
+
+    width: 420px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.cards .Family .title {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #54546D;
+}   
+
+.cards .Family ul {
+    text-align: left;
+    padding-left: 3rem;
+    font-size: medium;
+    width: 90%;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    color: #54546D;     
+
+
+
+}
+
+
+.cards .Family .btn {
+    width: 50%;
+    margin: 0 auto;
+    height: 2rem;
+    border-radius: 30px;
+    color: white;
+    background-color: #1DB954;
+    font-size: small;
+    font-weight: 900;
+
+
+
+}
+
+.cards .Family .smallHead {
+    position: absolute;
+    background-color: #000000;
+    color: white;
+    height: 3rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards .Family .smallHead .bigP {
+    position: absolute;
+    border-right: 1px solid white;
+    font-size: 1.25rem;
+    padding-right: 1rcap;
+    top: 20%;
+    left: 5%;
+
+
+
+}
+
+.cards .Family .smallHead .smallP {
+
+    font-size: 1.25rem;
+    position: absolute;
+    padding-left: 7.5rem;
+    top: 20%;
+
+}
+
+.hero {
+    padding-top: 8rem;
+}
+
+.hero .pall {
+    display: flex;
+    gap: 8rem;
+    padding-bottom: 4rem;
+    width: 90%;
+
+}
+
+.hero .pall .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 6rem;
+    width: 60%;
+}
+
+.hero .pall .dog {
+    width: 350px;
+
+}
+
+
+.expiriance {
+
+    width: 60%;
+    margin: 0 auto;
+    
+    /* margin-bottom: 4rem; */
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+
+.expiriance .title,
+.text {
+    text-align: center;
+}
+
+
+.expiriance .title {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+.expiriance .text {
+    font-size: smaller;
+    padding-bottom: 1rem;
+
+}
+
+.expiriance .table {
+    width: 100%;
+    padding-left: 1rem;
+     height: 40%;
+
+}
+
+.expiriance .table .list {
+    list-style: none;
+    height: 40%;
+    background-color: #bfc6c1;
+    border-radius: 4px;
+    
+}
+.expiriance .table .list li {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiriance .table .list .green {    
+    background-color: #81D8A0;
+
+
+}
+
+.expiriance .table .list  span {
+    width: 45%;
+     padding-top: 0.5rem;
+   
+}
+
+.expiriance .table .list li .cross {
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+}
+
+.expiriance .table .list li .check{
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+}

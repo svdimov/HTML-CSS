@@ -1,0 +1,59 @@
+*,*::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #EBEBEB;
+    padding: 15px;
+
+}
+
+.card{
+    margin: 0 auto;
+    background-color: white;
+    width: 380px;
+    border-radius: 8px;
+    border: 1px solid darkgrey;
+    box-shadow: 0 4px 10px rgba(30, 30, 30, 0.4);
+    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.card .info {
+    margin: 10px 16px;
+}
+
+.card .info .desc {
+    margin: 10px 0 30px;
+    font-size: large;
+    color: #2D2D2D;
+}
+
+
+.card .info .website{
+    font-weight: 600;
+    display: block;
+}
+
+.card .info .link {
+    display: block;
+    color: black;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.card .info .title {
+    text-align: left;
+    
+}
+

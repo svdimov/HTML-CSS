@@ -1,0 +1,48 @@
+
+body{
+   padding: 3rem;
+   background-color: lightgrey;
+}
+.mainBox{
+    margin: 0 auto;
+    border: 1px solid lightgreen;
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.mainBox .edentical{
+    max-width:  930px;
+    height: 20px;
+    border: 1px solid blue;
+    
+
+}
+.mainBox .bigger {
+   
+    max-width: 995px;
+    border: 1px solid blue;
+
+    display: flex;
+    flex-grow: 1;
+}
+.mainBox .text{
+    
+    padding: 2rem;
+
+}
+
+.mainBox .edentical{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    
+    
+    
+}

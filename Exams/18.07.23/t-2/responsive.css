@@ -1,0 +1,150 @@
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .home-navbar {
+        padding: 12px 16px;
+    }
+
+    .home-link,
+    .home-link1,
+    .home-link2 {
+        margin-right: 12px;
+    }
+
+    .home-cta-btn {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .home-hero {
+        flex-direction: column-reverse;
+        gap: 16px;
+        padding: 24px 16px;
+        margin: 0;
+    }
+
+    .home-hero-text-container {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .home-heading {
+        font-size: 32px;
+        margin-bottom: 16px;
+        width: 75%;
+    }
+
+    .home-text02 {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .home-cta-btn2 {
+        width: 40%;
+        padding: 12px 16px;
+        margin: 0 auto;
+    }
+
+    .home-image1 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .home-features {
+        height: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home-heading-container {
+        width: 100%;
+    }
+
+    .home-text03 {
+        font-size: 28px;
+    }
+
+    .home-cards-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-feature-card,
+    .home-feature-card1,
+    .home-feature-card2 {
+        width: 100%;
+        max-width: 340px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .home-image2,
+    .home-image3,
+    .home-image4 {
+        width: 400px;
+        height: 50vh;
+    }
+
+    .home-heading1 {
+        position: relative;
+        left: 25%;
+
+    
+    }
+
+    .home-image2 {
+        margin: 0 auto;
+        margin-left: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .home-stats {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .home-text08,
+    .home-text13,
+    .home-text17,
+    .home-text22 {
+        font-size: 2.25rem;
+    }
+
+    .home-text11,
+    .home-text15,
+    .home-text20,
+    .home-text24 {
+        font-size: 1rem;
+    }
+
+    .home-text12,
+    .home-text16,
+    .home-text21,
+    .home-text25 {
+        font-size: 0.8rem;
+    }
+
+    .home-text05 {
+        text-align: center;
+         width: 510pX;
+         margin: 0 auto;
+    }
+
+    .home-text04, .home-text05, .home-text06, .home-text07 {
+
+        width: 510px;
+        padding-bottom: 2rem;
+
+    }
+
+
+
+}
+

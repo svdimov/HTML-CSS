@@ -1,0 +1,88 @@
+/* todo */
+@media (max-width: 600px) {
+
+    
+    .home-navbar {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home-links-container {
+        margin-left: 1rem;
+        gap: 8px;
+    }
+
+    .Anchor {
+        font-size: 12px;
+    }
+
+
+    .home-features {
+        height: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home-heading-container {
+        width: 100%;
+    }
+
+
+    .home-cards-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .home-feature-card,
+    .home-feature-card1,
+    .home-feature-card2 {
+        width: 100%;
+    }
+
+    .home-image2,
+    .home-image3,
+    .home-image4 {
+        width: 75%;
+        height: auto;
+    }
+
+
+    .home-stats {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+        grid-gap: 24px;
+    }
+
+
+    .home-hero {
+        flex-direction: column-reverse;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 24px;
+    }
+
+    .home-hero-text-container {
+        width: 95%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .home-image1 {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .home-cta-btn2 {
+        align-self: center;
+        width: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+  
+
+
+
+}

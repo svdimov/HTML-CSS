@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <section class="section">
+        <h1>Forms</h1>
+    </section>
+
+    <!-- 📝 Task 1: Create a Short Search Form
+    Goal: Build a small search form that allows users to search a website or database.
+    Requirements:
+    - Search Query → text input (<input type="text">)
+        - Required field
+        - Placeholder: “Enter your search…”
+    - Category → select menu (<select><option>…</option></select>)
+        - Options: All, Articles, Products, Users
+        - Default: “All”
+    - Search Button → submit button
+   -->
+
+    <section class="section">
+        <h2>Search form</h2>
+        <form action="./search.html" method="get">
+
+            <div class="topDownField">
+                <label for="searchQuery">Search Query</label>
+                <input id="searchQuery" type="text" name="search-text" placeholder="Artcile name, user name, etc..."
+                    required>
+            </div>
+
+            <div class="topDownField">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1-articles">Articles</option>
+                    <option value="2-products">Products</option>
+                    <option value="3-users">Users</option>
+                </select>
+            </div>
+
+            <button class="primary">Send</button>
+        </form>
+    </section>
+
+
+    <!-- 📝 Task 2: Create a Login Form
+    Goal: Build a simple login form for users to authenticate.
+    Requirements:
+    - Username / Email → text or email input (<input type="text"> or <input type="email">)
+        - Required field
+    - Password → password input (<input type="password">)
+        - Required field
+    - Login Button → submit button 
+   -->
+
+    <section class="section">
+        <h2>Login form</h2>
+
+        <form action="./profile.html" method="post">
+            <fieldset>
+                <legend>Login</legend>
+
+                <div class="topDownField">
+                    <label for="user">Username / Email</label>
+                    <input type="text" id="user" required placeholder="joe_doe/john@doe.com">
+                </div>
+
+                <div class="topDownField">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" required>
+                </div>
+
+                <div class="topDownField">
+                    <label for="note">Note</label>
+                    <textarea rows="10" name="note" id="note" placeholder="Leave a note"></textarea>
+                </div>
+
+                <button>Login</button>
+            </fieldset>
+        </form>
+
+    </section>
+
+    <!-- 📝 Task 3: Create a User Registration Form
+    Goal: Create a registration form that collects user details with different types of inputs.
+    Requirements:
+    - Username → text input
+        - Required field
+    - Password → password input
+        - Required field
+    - Age → number input
+        - Optional, range 1–120
+    - Email Address → email input
+        - Required field
+    - Gender → radio buttons
+        - Options: Male, Female, Other
+        - Required field (user must pick one)
+    - Hobbies → checkboxes
+        - Options: Reading, Music, Sports
+        - Optional, multiple can be selected
+    - Country → select menu
+        - Options: Bulgaria, Germany, USA, UK
+        - Default disabled option like “Choose your country” at the top (cannot be selected as a valid answer)
+        - Country itself = Required field
+    - Phone Number → text or tel input
+        - Disabled by default (cannot be typed into or submitted)
+    - Submit Button → to send the form
+    - Cancel Button → to remove all text
+-->
+
+    <section class="section advanced">
+        <h2>Advanced form</h2>
+        <form action="./search.html" class="advanced" method="post">
+
+            <div class="topDownField halfRow">
+                <label for="username">Username</label>
+                <input name="username" type="text" id="username" required>
+            </div>
+
+            <div class="topDownField halfRow">
+                <label for="password">Password</label>
+                <input name="password" required type="password" name="password" id="password">
+            </div>
+
+            <div class="topDownField halfRow">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="1" max="120">
+            </div>
+
+            <div class="topDownField halfRow">
+                <label for="email">Email</label>
+                <input type="email" name="email" required id="email">
+            </div>
+
+            <div class="topDownField halfRow">
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label class="check">
+                        Male
+                        <input type="radio" required name="gender" value="1-male">
+                    </label>
+
+                    <label class="check">
+                        Female
+                        <input type="radio" required name="gender" value="2-female">
+                    </label>
+
+                    <label class="check">
+                        Other
+                        <input type="radio" required name="gender" value="3-other">
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="topDownField halfRow">
+                <fieldset>
+                    <legend>Hobbies</legend>
+
+                    <label class="check">
+                        Reading
+                        <input type="checkbox" name="hobbies" value="1-reading">
+                    </label>
+
+                    <label class="check">
+                        Music
+                        <input type="checkbox" name="hobbies" value="2-music">
+                    </label>
+
+                    <label class="check">
+                        Sports
+                        <input type="checkbox" name="hobbies" value="3-sports">
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="topDownField">
+                <label for="country">Country</label>
+                <select required name="country" id="country">
+                    <option value="" disabled selected>Choose your country</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="DE">Germany</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+
+            <div class="topDownField">
+                <label for="phone"> Phone Number</label>
+                <input disabled type="tel" id="phone">
+            </div>
+
+            <div class="btnWrapper">
+                <button type="reset">reset</button>
+                <button type="submit" class="primary">send</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

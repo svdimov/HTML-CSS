@@ -1,0 +1,49 @@
+ul.buttons {
+  list-style: none;
+  margin: 0;       /* remove default margin */
+  padding: 0;      /* remove default padding */
+
+}
+.title {
+    .title {
+  padding-left: 0; /* reset so it aligns with icons */
+}
+}
+.buttons {
+    list-style: none;
+    
+    
+   
+}
+
+.buttons .item {
+    display: inline-block;
+    margin: 2px 0px 10px 10px;
+
+
+   
+    
+
+}
+
+.buttons .item .btn {
+    border-radius: 100%;
+    border: none;
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+.buttons .item .btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50% );
+    
+}
+.title {
+    margin-left: 10px;
+}

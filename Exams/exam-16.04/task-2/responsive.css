@@ -1,0 +1,119 @@
+@media (max-width: 600px) {
+  /* HEADER / NAV */
+  .home-header {
+    height: auto;
+    padding: 16px;
+    justify-content: center;
+  }
+
+  .home-container01 {
+    width: 96%;
+  }
+  .home-nav {
+    padding-left: 0;
+  }
+  .navigation-links-nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: normal;
+    
+    
+  }
+  .navigation-links-text {
+    margin-left: 2rem;
+
+  }
+
+
+  /* BLOG LIST */
+  .home-blog {
+    padding: 16px;
+    align-items: stretch;
+  }
+  .home-container04 {
+    width: 100%;
+    align-items: stretch;
+  }
+  .blog-post-card3-blog-post-card {
+    max-width: 100%;
+    flex-direction: column;          /* снимка отгоре, текст отдолу */
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .blog-post-card3-image {
+    width: 100%;                     /* снимката да е фул уидт */
+    height: auto;
+    display: block;
+  }
+  .blog-post-card3-container {
+    padding: 16px;                   /* по-малки вътрешни отстояния */
+  }
+  .blog-post-card3-text1 {
+    margin-bottom: 24px;
+  }
+  .blog-post-card3-container1 {
+    margin-bottom: 24px;
+  }
+
+  /* STATS (2 колони × 2 реда) */
+  .home-stats {
+    padding: 24px 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+  .home-text {
+    font-size: 2rem;
+  }
+  .home-text01 {
+    font-size: 1rem;
+  }
+  .home-text02 {
+    font-size: 0.75rem;
+  }
+
+  /* PRICING */
+  .home-container06 {
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-container07 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .home-text03 {
+    margin: 16px 0 24px;
+    text-align: center;
+  }
+
+  /* кутии една под друга, центрирани и по-тесни */
+  .home-container08 {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .home-container09,
+  .home-container10 {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .home-container09 { margin-right: 0; }
+
+  /* дребни подобрения на бутони/текст */
+  .home-text05 {                       /* цената */
+    margin: 24px;
+    font-size: 3rem;
+  }
+  .home-button,
+  .home-button1 {
+    width: auto;
+    min-width: 140px;
+  }
+}
+
+

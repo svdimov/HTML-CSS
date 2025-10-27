@@ -1,0 +1,65 @@
+  :root{
+    --clr-margin: #ff9a73;   /* оранжево */
+    --clr-border: #ffe6bf;   /* прасковено */
+    --clr-padding:#98ee99;   /* зеленикаво */
+    --clr-content:#a9d6f5;   /* синьо */
+    --dash: 2px dashed #5b5b5b;
+    --radius: 6px;
+  }
+
+  /* центриране на диаграмата в страницата */
+  body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    margin:0;
+    min-height:100svh;
+    display:grid;
+    place-items:start center;
+    background:#fff;
+  }
+
+  .wrap{
+    width:min(820px, 90vw);
+    margin-top:120px;
+  }
+
+  /* Общи стилове за всеки слой */
+  .layer{
+    position:relative;
+    border-radius:var(--radius);
+    outline:var(--dash);
+  }
+  .layer > .label{
+    position:absolute;
+    top:8px; left:10px;
+    font-weight:600;
+    font-size:18px;
+    color:#2b2b2b;
+    user-select:none;
+  }
+
+  /* Слоеве */
+  .margin{
+    background:var(--clr-margin);
+    padding: 60px 60px;
+  }
+  .border{
+    background:var(--clr-border);
+    padding:50px 50px ;
+  }
+  .padding{
+    background:var(--clr-padding);
+    padding:40px 40px
+  }
+  .content{
+    background:var(--clr-content);
+    padding:30px 30px;
+    text-align:center;
+    font-weight:600;
+    color:#243b53;
+  }
+
+  /* Лек “аналог” на мащаба от снимката */
+  @media (min-width:900px){
+    .wrap{ width:920px; }
+    .content{ width:60%; margin:auto; }
+  }

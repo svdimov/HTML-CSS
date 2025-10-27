@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.5rem;
+    position: relative;
+}
+
+.card .tag {
+    position: absolute;
+    padding: 0.5rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 0.25rem;
+    opacity: 0.8;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.75rem;
+}
+
+.card .wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.card .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.card .header .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .main {
+    padding: 140px 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.card .about {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.card .about .title {
+    font-size: 1.5rem;
+}
+
+.card .about .divider {
+    height: 1px;
+    background-color: darkgray;
+    margin: 0.5rem 0;
+}
+
+.card .about .avatar {
+    --size: 60px;
+    --top: calc((var(--size) / 2) * -1);
+    --right: calc((var(--size) / 4) * -1);
+
+    border-radius: 100%;
+    border: 2px solid white;
+    width: var(--size);
+    position: absolute;
+    top: var(--top);
+    right: var(--right);
+}
+
+.card .about .name {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 50px 2px 2px;
+    transform: translateY(-80%);
+    border: 1px solid black;
+}
+
+
+.card .groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card .groups .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .groups .details .link {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.card .groups .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: darkgray;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+.card .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    color: lightcoral;
+}
+
+.card .summary .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width:800px){
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 40%;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width:1200px){
+    .card{
+        width: 20%;
+    }
+}

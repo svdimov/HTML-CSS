@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    padding: 30px;
+}
+.mainSec {
+    margin: 0 auto;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    width: 1000px;
+   
+    
+     
+}
+
+
+.mainSec .first {
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 950px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.mainSec .second {
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 950px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.mainSec .first .items{
+    width: 96%;;
+    height: 70px;
+    /* background-color: beige; */
+    padding: 10px;
+    border: 1px solid gray;
+     border-radius: 2px;
+    margin: 10px;;
+}
+
+
+
+.mainSec .second .items{
+    width: 96%;;
+    height: 70px;
+    
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin: 10px;;
+}
+
+.mainSec .second .half{
+    display: flex;
+    width: 98%;
+
+}
+
+
+
+.mainSec .first .half{
+    display: flex;
+    width: 98%;
+
+}
+
+.mainSec .first .half > :first-child {
+    
+    flex: 2;
+    
+    
+}
+
+.mainSec .first .half > :not(:first-child) {
+    flex: 1;
+   
+}
+
+.mainSec .second .half > :first-child {
+    
+    flex: 1;
+    
+    
+}
+
+.mainSec .second .half > :not(:first-child) {
+    flex: 2;
+   
+}
+
+
+    
+li {
+    display: flex;
+    align-items: center;
+}
+

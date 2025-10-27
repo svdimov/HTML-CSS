@@ -1,0 +1,24 @@
+
+
+.inp {
+  position: relative;
+  display: inline-block;      /* по желание */
+}
+
+
+.inp::after {
+  content: "*";
+  position: absolute;
+  right: 87px;
+  top: 65%;
+  transform: translateY(-50%);
+  color: #12b886;
+  pointer-events: none;
+  font-family: "Share Tech Mono", monospace; /* по желание */
+}
+
+
+.inp:has(input:focus)::after,
+.inp:has(input:not(:placeholder-shown))::after {
+  opacity: 0;
+}

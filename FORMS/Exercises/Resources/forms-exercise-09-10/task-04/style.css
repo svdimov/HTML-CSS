@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card fieldset {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card fieldset legend {
+    padding: 0 1rem;
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card .row {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-top: 1.25rem;
+}
+
+.card .input {
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 0.75rem;
+    display: block;
+    width: 100%;
+}
+
+.card .label {
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.75rem;
+    transition: all 300ms ease-in-out;
+}
+
+.card .input:focus~.label,
+.card .input:not(:placeholder-shown)~.label {
+    top: 0px;
+}
+
+.card .input:invalid{
+    border-color: red;
+}
+.card .input:not(:placeholder-shown):valid{
+    border-color: green;
+}
+
+
+.card .info {
+    color: #909090;
+    font-style: italic;
+}
+
+.card .btn {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    background-color: #efefef;
+    border: none;
+    width: 100%;
+}

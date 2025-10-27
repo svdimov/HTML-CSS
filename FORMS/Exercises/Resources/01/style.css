@@ -1,0 +1,499 @@
+/* ========== Reset ========== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    width: 85%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #e0dada;
+    line-height: 1.6;
+    margin: 0 auto;
+
+}
+
+/* ========== Top bar ========== */
+.top-bar {
+    background: #f58db4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* според твоя вариант */
+    padding: 6px 16px;
+    font-size: 14px;
+    height: 8rem;
+
+    /* без марджини, за да опре в hero */
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.top-links,
+.socials {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.socials {}
+
+/* ========== Social icons ========== */
+/* кръгли бутони с икони; работи с Font Awesome */
+.socials .social {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    color: white;
+    text-decoration: none;
+    transition: transform .15s ease, background .2s ease, color .2s ease;
+    font-size: 14px;
+    /* размер на FA иконата */
+}
+
+
+/* ========== Main Header (nav bar) ========== */
+/* Навбарът „плава“ над началото на hero; изваждаме го визуално нагоре,
+   без да прави бяла ивица между top-bar и hero */
+.main-header {
+    width: min(900px, 90%);
+    background: #fff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: -28px;
+    /* изтегляме го нагоре да застъпва hero */
+    padding: 10px 18px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    position: relative;
+    /* за да работи z-index */
+    z-index: 1000;
+    /* над hero */
+    border: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+
+}
+
+.navbar .name {
+    font-weight: bolder;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo .blue {
+    color: #28a9e0;
+}
+
+.logo .pink {
+    color: #f58db4;
+}
+
+/* ========== Hero ========== */
+/* За да НЯМА бяла ивица от body между top-bar и hero:
+   - Никакви top-margin-и тук.
+   - Допълнително дърпаме hero леко нагоре със -28px, за да застане под навбара. */
+.hero {
+    background: url('./images/carousel-1.jpg') no-repeat center center / cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: -31px;
+    /* ключово: долепя hero към top-bar и под навбара */
+    filter: brightness(0.8);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    /* над overlay-а */
+}
+
+.hero h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+/* ========== Buttons ========== */
+
+.hero .hero-content .btn {
+    display: inline-block;
+    padding: 6px 24px;
+    background: #f58db4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform .15s ease;
+    width: 30%;
+    height: 40px;
+}
+
+.btn:hover {
+    background: #e0769d;
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+/* ========== Helpers ========== */
+.container {
+    width: min(1100px, 90%);
+    margin-inline: auto;
+}
+
+/* ========== Responsive tweaks ========== */
+/* @media (max-width: 768px) {
+  .navbar ul { gap: 16px; flex-wrap: wrap; }
+  .hero { min-height: 70vh; }
+  .hero h1 { font-size: clamp(32px, 7vw, 48px); }
+  .main-header { margin-top: -22px; }
+}
+
+@media (max-width: 520px) {
+  .navbar ul { gap: 12px; }
+  .logo a { font-size: 20px; }
+  .main-header { border-radius: 28px; margin-top: -18px; padding: 8px 14px; }
+} */
+
+.hero {
+    border-bottom: 4px solid #AAACB2;
+}
+
+.section {
+    background-color: #C8E7F8;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+
+
+
+}
+
+.section .mianTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.section .mianTitle .line {
+    border: 3px solid #F195B2;
+    width: 5rem;
+    border-radius: 8px;
+
+}
+
+.section .mianTitle h2 {
+    color: #555555;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.treeBox {
+
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 280px;
+    height: 450px;
+    /* може да изкриви, ако пропорциите са други */
+    object-fit: cover;
+    /* добави това, ако искаш да изрежеш вместо да изкривиш */
+}
+
+.treeBox .aboutOur h2 {
+    color: #555555;
+}
+
+.treeBox .aboutOur {
+
+    max-width: 330px;
+    height: 80px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: small;
+}
+
+
+.treeBox .aboutOur.first .eos {
+    width: 250px;
+    text-align: center;
+    font-size: medium;
+    text-align: start;
+
+
+
+
+
+}
+
+
+.treeBox .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #6F7981;
+    font-weight: bold;
+    font-size: small;
+    padding-left: 0.75rem;
+    position: relative;
+    right: 2rem;
+
+
+}
+
+.treeBox .features-list .eos i {
+    color: #28a9e0;
+    padding-right: 1rem;
+}
+
+
+
+.treeBox .btn.pink {
+    background-color: pink;
+    border: none;
+
+
+
+}
+.treeBox .aboutOur.first {
+    padding-top: 4rem;
+}
+
+.treeBox .aboutOur.aboutOur.first .btn {
+    text-align: center;
+    background-color: #62C3E7;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+
+    width: 50%;
+    height: 40PX;
+
+    min-width: max-content;
+
+    flex-shrink: 0;
+
+
+}
+
+.treeBox .aboutOur.aboutOur.first .btn.blue {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+}
+
+
+.treeBox .aboutOur .eos {
+    color: #6F7981;
+    font-weight: bold;
+    text-align: center;
+    width: 220px;
+
+}
+
+.treeBox .aboutOur .text {
+    width: 280px;
+}
+
+
+.treeBox .aboutOur.second {
+    padding-top: 4rem;
+
+}
+
+.aboutOur.second .secondary {
+    text-align: center;
+    background-color: #FFC0CB;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+
+    width: 50%;
+    height: 40PX;
+
+    min-width: max-content;
+
+    flex-shrink: 0;
+
+}
+
+.aboutOur.second .secondary .btn.pink {
+    color: white;
+}
+
+/* footer */
+
+.footer {
+    background-color: white;
+
+}
+
+
+.footer .logo {
+
+    text-align: center;
+    padding-top: 4rem;
+
+
+
+}
+
+.footer .logo a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer .logo .blue {
+    font-size: 3rem;
+
+
+
+}
+
+.footer .logo .pink {
+    font-size: 3rem;
+
+}
+
+.footer .socials {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.footer .socials .social {
+    color: #62C3E7;
+    border: 2px solid #62C3E7;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.footer .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 0.5rem;
+}
+
+
+.footer .box h2 {
+    font-size: medium;
+    color: #555555;
+}
+
+.box .divider {
+    height: 90px;
+    border: 1px solid #959697;
+    margin-top: 1.25rem;
+}
+
+.box .touch {
+    text-align: right;
+    color: #5C6266;
+    font-size: small;
+}
+
+.box .hour {
+    color: #5C6266;
+    font-size: small;
+}
+
+
+.footer .right {
+
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: small;
+}
+
+.footer .right .domain {
+    color: #F3B6C7;
+
+}

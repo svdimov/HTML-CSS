@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="card">
+        <div class="card__image" aria-hidden="true"></div>
+
+        <section class="card__form">
+            <h1 class="title">FITNESS CALCULATOR</h1>
+
+            <div class="unit-toggle">
+                <button class="btn btn--unit btn--unit-active">Standart units (US)</button>
+                <button class="btn btn--unit">Metric units</button>
+            </div>
+
+            <form class="form" action="#" method="get">
+                <h2 class="group-label">Gender</h2>
+                <div class="row row--two">
+                    <select class="control">
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Other</option>
+                    </select>
+                    <input class="control" type="text" placeholder="Years...">
+                </div>
+
+                <h2 class="group-label">Weight</h2>
+                <div class="row">
+                    <input class="control control--full" type="text" placeholder="Pounds...">
+                </div>
+
+                <h2 class="group-label">Height</h2>
+                <div class="down" >
+                    <input class="control-btn" type="text" placeholder="Feet...">
+                    <input class="control-btn" type="text" placeholder="Inches...">
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn--primary" type="submit">Calculate</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+
+</html>

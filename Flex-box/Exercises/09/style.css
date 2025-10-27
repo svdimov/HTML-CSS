@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8rem;
+}
+
+
+.mainBox {
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    max-height: 1200px;
+    background-color: white;
+    padding: 1rem;
+
+
+}
+.mainBox .title {
+    padding: 2rem;
+}
+
+.mainBox .list  {
+    
+    padding: 2rem;
+    
+}
+
+.mainBox .textP {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}

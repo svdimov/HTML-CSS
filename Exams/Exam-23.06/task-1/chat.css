@@ -1,0 +1,95 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gochi Hand", cursive;
+  background: #e9e9e9;
+  padding: 2rem 1rem;
+}
+
+/* Card */
+.card {
+  max-width: 920px;
+  margin: 0 auto;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 22px rgba(0,0,0,.12);
+  overflow: hidden; /* пази заоблянето на целия компонент */
+}
+
+/* Top media area */
+.box {
+  position: relative;
+  border-bottom: 1px solid #dcdcdc;
+  background: white;
+  padding: 1.25rem;
+}
+
+.media {
+  border-radius: 12px 12px 0 0;  /* само горни ъгли */
+  overflow: hidden;              /* клипва изображението по радиуса */
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Overlay content bubble */
+.content {
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 110px); /* над долния ръб на снимката */
+  transform: translate(-50%, -50%);
+  width: min(760px, calc(100% - 48px));
+  background: #F4F4F3;
+  color: #222;
+  text-align: center;
+  padding: 0.9rem 1.1rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+
+.title {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  margin-bottom: .35rem;
+}
+
+.text {
+  font-size: clamp(.9rem, 1.2vw, 1rem);
+  line-height: 1.35;
+}
+
+/* Footer / address panel */
+.footer {
+  padding: 2.25rem 3rem 2.5rem;
+  background: #fff;
+}
+
+.to {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.addr {
+  font-style: normal; /* address по подразбиране е italic */
+  line-height: 1.9;
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .img { height: 280px; }
+  .content { width: calc(100% - 32px); }
+  .footer { padding: 2rem 1.25rem; }
+}

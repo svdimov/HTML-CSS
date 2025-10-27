@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+.form {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form .input,
+.form .btn {
+    background-color: #ededed;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ededed;
+    width: 100%;
+}
+
+.form .input:focus{
+    outline: 2px solid orange;
+}
+
+.form .btn {
+    background-color: #ff8c02;
+    color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+@media screen and (min-width:600px) {
+    .form .input {
+        width: 25%;
+    }
+
+    .form .input[name="name"] {
+        flex-grow: 1;
+    }
+
+    .form .input[name="email"] {
+        flex-grow: 2;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .form .input {
+        width: auto;
+    }
+
+    .form .btn {
+        width: 120px;
+    }
+
+    .form .input[name="name"] {
+        flex-grow: 0;
+    }
+
+    /* .form .input[name="name"] {
+        flex-grow: 0;
+        width: calc((100% - ( 2 * 1rem)) * 0.25) ;
+    }
+
+    .form .input[name="email"] {
+        flex-grow: 0;
+        width: calc((100% - ( 2 * 1rem)) * 0.6);
+    }
+
+    .form .btn {
+        width: calc((100% - ( 2 * 1rem)) * 0.15);
+    } */
+}

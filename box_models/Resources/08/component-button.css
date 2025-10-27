@@ -1,0 +1,40 @@
+.sec {
+    padding-left: 20px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.grey{
+    background-color: #D8D8D8;
+    border: none;
+
+    
+}
+.orange {
+    background-color: #FF9B00;
+    border: none;
+}
+
+.yello{
+    background-color: #F9F9CC;
+}
+
+.white {
+    background-color: white;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+.edit {
+    border: none;
+    width: 85px;
+    background-color: #D8D8D8;
+}

@@ -1,0 +1,77 @@
+:root {
+  --border:#e6e6e6;
+  --text:#2d2d2d;
+  --bg:#fff;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#f7f7f7;
+  color:var(--text);
+  line-height:1.6;
+}
+
+.accordion {
+  max-width: 1000px;
+  margin: 32px auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden; /* за да слеем границите */
+}
+
+.accordion details {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.accordion details:last-of-type {
+  border-bottom: none;
+}
+
+/* Заглавие */
+.accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+/* скриваме стандартния маркер */
+.accordion summary::-webkit-details-marker {
+  display:none;
+}
+
+/* Икона ">" отпред; завъртаме при open */
+.accordion summary::before {
+  content: "›";
+  display:inline-block;
+  font-weight: 800;
+  transform: rotate(0deg);
+  transition: transform .18s ease;
+  width: 16px;
+}
+
+.accordion details[open] summary::before {
+  transform: rotate(90deg); /* изглежда като "v" */
+}
+
+/* Съдържание */
+.accordion .content {
+  padding: 16px 24px 22px;
+}
+
+.accordion .content p + p {
+  margin-top: 14px;
+}
+
+/* Достъпност при клавиатура */
+.accordion summary:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

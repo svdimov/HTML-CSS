@@ -1,0 +1,131 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body>h2 {
+    margin: 4rem 1rem 2rem;
+}
+
+
+/* ------------- */
+/* Taks 10 Section Banner */
+
+.centeredContent {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.banner {
+    border: 1px solid gray;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    max-width: 1100px;
+    width: 100%;
+}
+
+.banner .content {
+    flex-grow: 1;
+}
+
+.banner .subtitle {
+    font-size: 1.25rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.banner .title {
+    color: black;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.banner .text {
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.banner .actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.banner .btn.primary {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.banner .btn.secondary {
+    background-color: lightgray;
+    color: black;
+}
+
+.banner .imgHolder {
+    width: 300px;
+    aspect-ratio: 4 / 3;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 0.25rem;
+    flex-shrink: 0;
+}
+
+
+@media (max-width:1000px) {
+    .banner {
+        align-items: stretch;
+    }
+
+    .banner .imgHolder {
+        width: 200px;
+    }
+}
+
+@media (max-width:600px) {
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner .imgHolder {
+        width: 100%;
+        aspect-ratio: unset;
+        height: 120px;
+    }
+}

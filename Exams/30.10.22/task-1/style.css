@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+    min-height: 100vh;
+    display: flex;               /* no grid */
+    align-items: flex-start;      /* start vertically */
+    justify-content: center;      /* center horizontally */
+}
+
+/* Card container (fixed size to match screenshot proportion) */
+.card {
+    width: 1240px;          /* fixed, non-responsive */
+    height: 540px;
+    margin-top: 60px;
+    background: #eef1f4;
+    border: 1px solid #c9c9c9;
+    border-radius: 18px;
+    display: flex;           /* switched from grid to flex */
+    overflow: hidden;
+    box-shadow: 0 50px 55px rgba(0, 0, 0, 0.25), 0 8px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card__image {
+    width: 50%;
+
+    background-image: url("image/calculator.png");
+    background-size: cover;
+    background-position: center; /* closely matches screenshot crop */
+}
+
+.card__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #141414;
+    margin-top: 12px;
+}
+
+.unit-toggle {
+    display: flex;
+    gap: 5rem;
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
+
+.btn {
+    width: 160px;
+    font: 600 11px/1 "Open Sans", sans-serif;
+    border-radius: 10px;
+    padding: 12px 22px;
+    border: 1px solid #6d6d6d;
+    background: #e6e6e6;
+    color: #222;
+    cursor: default; /* static UI for this task */
+}
+
+.btn--unit-active {
+    background: #76c056; /* green like screenshot */
+    border-color: #5aa13b;
+}
+
+.group-label {
+    font: 700 18px/1.2 "Open Sans", sans-serif;
+    color: #2b2b2b;
+    margin: 18px 0 10px;
+    text-align: center;
+}
+
+/* Form layout */
+.form {
+    width: 560px; /* fixed column area similar to screenshot */
+}
+
+.row {
+    display: flex;         
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 18px;
+}
+
+.row--two {
+    flex-direction: row;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.control {
+    width: 150px;
+    margin: 0 auto;
+    height: 32px;
+    padding: 6px 10px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    background: #fff;
+    color: #222;
+    outline: none;
+}
+
+.control--full {
+    width: 80%;
+}
+
+/* Calculate button */
+.actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn--primary {
+    width: 520px;
+    height: 36;
+    border-radius: 28px;
+    border: none;
+    background: #0e8fb7; /* teal */
+    color: #fff;
+   font-size: 1rem;
+    
+    box-shadow: 0 18px 26px rgba(0, 0, 0, 0.35);
+}
+.down {
+    display: flex;
+    gap: 1rem;
+    
+}
+.down .control-btn {
+    width: 50%;
+    height: 34px;
+    border-radius: 8px;
+    padding-left: 1rem;
+    border: 1px solid lightgray;
+    
+    
+}

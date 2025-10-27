@@ -1,0 +1,360 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 90%;
+    margin: 0 auto;
+    background-color: grey;
+  
+
+
+}
+
+body {
+    background-color:white;
+}
+
+body h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body,
+p,
+span {
+    font-family: "Lato", sans-serif;
+}
+
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem 0 4rem;
+    background-color: white;
+    position: sticky;
+}
+
+.topbar .container .brand__logo {
+    width: 100px;
+    padding-bottom: 1rem;
+
+}
+
+.topbar .container .nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.topbar .container .nav a {
+    list-style: none;
+    text-decoration: none;
+    color: #676779;
+    font-weight: 400;
+}
+
+.hero {
+    height: 400px;
+    background-color: #54546D;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .container h1 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+    font-weight: 500;
+
+}
+
+.hero .container .img {
+    position: absolute;
+    left: -5%;
+    z-index: 10;
+
+}
+
+.pricing.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 100;
+
+}
+
+
+.pricing.container .card {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+.card__head {
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.card__head h3 {
+    padding-bottom: 0.5rem;
+    color: #66667C;
+}
+
+.card__head p {
+    color: rgb(122, 120, 120);
+    margin-bottom: 2rem;
+
+}
+
+.card__body {
+
+    background-color: #9A5DC6;
+    height: 2.8rem;
+    width: 180px;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding-top: 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+}
+
+.card__body .btn {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+
+}
+
+.card__body .btn .name {
+    padding: 0.5rem 2rem;
+}
+
+.card__ribbon {
+    width: 400px;
+    height: 80px;
+   
+    border-radius: 0 0 8px 8px;
+
+}
+
+.card__ribbon.card__ribbon--green {
+    background-color: #3FCC75;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.7rem;
+    border-radius: 0 0 8px 8px;
+    color: white;
+
+}
+
+
+.card__ribbon.card__ribbon--blue {
+    background-color: #5681A9;
+    
+}
+
+
+
+.card__ribbon.card__ribbon--blue  .price {
+    display: flex;
+    padding: 1rem;
+    padding-left: 2rem;
+    color: white;
+    gap: 1rem;
+    
+
+}
+
+
+.card__ribbon.card__ribbon--blue  .price div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card__ribbon.card__ribbon--blue  .price .left {
+    border-right: 1px solid white;
+    padding-right: 0.5rem;
+}
+
+
+/* purpel */
+.card__ribbon.card__ribbon--purple {
+    background-color: #6A59C2;
+}
+
+
+.card__ribbon.card__ribbon--purple  .price {
+    display: flex;
+    padding: 1rem;
+    padding-left: 2rem;
+    color: white;
+    gap: 1rem;
+    
+
+}
+
+
+.card__ribbon.card__ribbon--purple  .price div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card__ribbon.card__ribbon--purple .price .left {
+    border-right: 1px solid white;
+    padding-right: 0.5rem;
+    
+}
+
+
+.card__ribbon .price div {
+    text-align: center;
+}
+
+
+.container.mode{
+   display: flex;
+   flex-direction: column;
+   padding-top: 10rem;
+   width: 80%;
+   margin: 0 auto;
+   gap: 2rem;
+   justify-content: first baseline;
+   
+ 
+   background-color: white;
+
+
+}
+
+.container.mode h2 {
+    width: 80%;
+    
+    color: gray;
+    font-weight: 500;
+}
+
+
+.container.mode .lead {
+    width: 80%;
+    font-size: 0.86rem;
+    
+    color: gray;
+}
+
+.container.mode .table {
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem
+
+}
+
+
+.container.mode .table .row {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+
+.container.mode .table .row .left{
+    padding-right: 4rem;
+}
+.container.mode .table .row.grey  {
+    background-color: #E6E6E6;
+    
+    
+}
+
+
+.container.mode .table .row.grey .c1 {
+    width: 70%;
+}
+
+
+.container.mode .table .row.light .c1 {
+    width: 70%;
+}
+
+.container.mode .table .row.light{
+    background-color: #F8F8F8;
+    
+     
+}
+
+.container.finance {
+    margin-left: 4rem;
+    width: 80%;
+}
+.container.finance h2{
+    color: gray;
+    font-weight: 600;
+    width: 80%;
+    padding-bottom: 2rem;
+
+    
+}
+
+.container.finance .finance__wrap {
+    display: flex;
+}
+
+
+
+.container.finance .finance__wrap .finance__text  {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: gray;
+    padding-bottom: 4rem;
+    width: 65%;
+    font-size: 0.75rem;
+  
+}
+
+
+.footer {
+    height: 50px;
+    background-color: #54546D;
+}
+
+
+.footer .container {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+

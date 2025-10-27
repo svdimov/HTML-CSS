@@ -1,0 +1,60 @@
+
+
+body {
+    background-color: lightgray;
+}
+
+main {
+    width: 1100px;
+    height: 450px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.header h2 {
+    text-align: center;
+    
+
+}
+
+.header p {
+
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #A1A1A1;
+
+}
+
+.low {
+  
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+   
+    gap: 50px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;     /* vertical stack */
+    justify-content: flex-end;  /* push content to the bottom */
+    align-items: center;        /* center horizontally */
+    height: 100px;
+    width: 800px;
+  
+    margin: 30px auto 0;        /* center the blue box itself */
+    padding: 0 16px;            /* side padding so text can wrap nicely */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0 0 8px;            /* remove default top margin so it sits at the bottom */
+    font-style: italic;    
+    color: #A1A1A1;
+}
